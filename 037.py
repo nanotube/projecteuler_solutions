@@ -1,5 +1,5 @@
 from euler.prime import PrimenessChecker
-pc = PrimenessChecker('primes.txt')
+pc = PrimenessChecker('primes.txt', maxprime=1000000)
 
 truncatables = []
 

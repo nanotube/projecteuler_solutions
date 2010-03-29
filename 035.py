@@ -1,5 +1,5 @@
 from euler.prime import PrimenessChecker
-pc = PrimenessChecker('primes.txt')
+pc = PrimenessChecker('primes.txt', maxprime=1000000)
 
 circularcount = 0
 
@@ -8,8 +8,6 @@ for i in range(len(pc.primes)):
     if p < 10:
         circularcount += 1
         continue
-    if p > 1000000:
-        break
     allprime = 0
     pstr = str(p)
     for s in range(len(pstr)):
